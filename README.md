@@ -1,3 +1,3 @@
 # personal-profile
 
-Hello, my name is Thu
+My project: personal profile
