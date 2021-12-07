@@ -1,5 +1,23 @@
 {
   "dependencies": {
     "node-sass": "^7.0.0"
-  }
+  },
+  "name": "personal-profile",
+  "description": "My project: personal profile",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/main.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/memopussle/personal-profile.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/memopussle/personal-profile/issues"
+  },
+  "homepage": "https://github.com/memopussle/personal-profile#readme"
 }
