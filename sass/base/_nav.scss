@@ -1,0 +1,16 @@
+.nav{
+    &__nav-link {
+        font-size: $default-font-size;
+        color: $font-white;
+
+        &:hover {
+            color: $font-white;
+        }
+    }
+}
+
+.dropdown-menu {
+    &__dropdown-item {
+        font-size: $default-font-size;
+    }
+}
