@@ -1,0 +1,35 @@
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.nav__nav-link {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.nav__nav-link:hover {
+  color: white;
+}
+
+.dropdown-menu__dropdown-item {
+  font-size: 1.5rem;
+}
+
+.home {
+  height: 95vh;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#023e8a), color-stop(#14213d), to(#000000));
+  background-image: linear-gradient(to right bottom, #023e8a, #14213d, #000000);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 50%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+}
+/*# sourceMappingURL=main.css.map */
