@@ -1,0 +1,50 @@
+@media(min-width: 576px) {
+    .main-page {
+        
+        &__column,
+        &__img {
+            height: 40rem;
+        }
+        
+    }
+
+    .hero {
+        &__text {
+          &--1 {
+              font-size: $font-huge;
+          }
+
+          &--2 {
+              font-size: $font-medium;
+          }
+        }
+    }
+}
+
+@media(max-width: 575px) {
+    .main-page {
+        .row {
+            display: flex;
+            flex-direction: column-reverse;
+          
+        }
+        &__column,
+        &__img {
+            height: 30rem;
+        }
+    
+        &__column--1 {
+            position: relative;
+        }
+    }
+
+    .hero {
+        position: absolute;
+        top: 65%;
+
+        &__text--1 {
+            font-size: $font-big;
+        }
+        
+    }
+}

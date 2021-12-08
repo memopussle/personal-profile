@@ -2,18 +2,34 @@ html {
   font-family: 'Roboto', sans-serif;
   font-size: 62.5%; }
 
+@media (min-width: 576px) {
+  .main-page__column, .main-page__img {
+    height: 40rem; }
+  .hero__text--1 {
+    font-size: 6rem; }
+  .hero__text--2 {
+    font-size: 2rem; } }
+
+@media (max-width: 575px) {
+  .main-page .row {
+    display: flex;
+    flex-direction: column-reverse; }
+  .main-page__column, .main-page__img {
+    height: 30rem; }
+  .main-page__column--1 {
+    position: relative; }
+  .hero {
+    position: absolute;
+    top: 65%; }
+    .hero__text--1 {
+      font-size: 4rem; } }
+
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
-
-h2 {
-  font-size: 6rem; }
-
-h4 {
-  font-size: 2rem; }
 
 .nav__nav-link {
   font-size: 1.5rem;
@@ -30,21 +46,12 @@ h4 {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 50%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%); }
 
-/*.main-page {
- 
-    //&__img {
-       height: 60vh;
-        width: 60vh;
-        background-image: linear-gradient(
-            to right bottom,
-            rgba($color-fifth, 0.2),
-            rgba($color-secondary, 0.9)),
-            url(../img/photome.jpg);
-         background-size: cover;
-         background-position: center;
-         border-radius: 3px 7rem 3px 7rem;
-    }
-}*/
+.main-page__img {
+  background-position: center;
+  border-radius: 3px 7rem 3px 7rem;
+  background-image: linear-gradient(to right bottom, rgba(2, 62, 138, 0.4), rgba(20, 33, 61, 0.3), rgba(0, 0, 0, 0.6)), url(../img/photome.jpg);
+  background-size: cover; }
+
 .hero__text {
   color: white; }
 
