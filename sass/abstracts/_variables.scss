@@ -6,7 +6,14 @@ $color-fourth: #023e8a;
 $color-fifth: #00b4d8;
 $font-white: white;
 
+$color-contrast: #fb8500;
+
 //FONT SIZE
 
 $default-font-size: 1.5rem;
+$font-big: 6rem;
+$font-medium: 2rem;
+
+//ASPECT RATIO BOX
+$long-aspect-ratio-box : calc(4.5 / 4 * 100%);
 

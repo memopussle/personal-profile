@@ -4,3 +4,35 @@
     clip-path: polygon( 0 0, 100% 0, 100% 100%, 0 50%);
     -webkit-clip-path: polygon( 0 0, 100% 0, 100% 100%, 0 90%);
 }
+ /*.main-page {
+ 
+    //&__img {
+       height: 60vh;
+        width: 60vh;
+        background-image: linear-gradient(
+            to right bottom,
+            rgba($color-fifth, 0.2),
+            rgba($color-secondary, 0.9)),
+            url(../img/photome.jpg);
+         background-size: cover;
+         background-position: center;
+         border-radius: 3px 7rem 3px 7rem;
+    }
+}*/
+
+.hero {
+    &__text {
+        color: $font-white;
+
+    }
+
+    &__social-media {
+       a {
+           color: $font-white;
+           
+           &:hover {
+               color: $color-fifth;
+           }
+       }
+    }
+}
