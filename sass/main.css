@@ -32,4 +32,11 @@ html {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 50%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
 }
+
+.img-wrapper {
+  background-image: url(./img/photo_me-2.png);
+  padding-top: calc(4.5 / 4 * 100%);
+  background-size: cover;
+  background-position: center;
+}
 /*# sourceMappingURL=main.css.map */
