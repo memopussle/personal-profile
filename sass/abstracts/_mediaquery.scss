@@ -9,6 +9,7 @@
     }
 
     .hero {
+        position: relative;
         &__text {
           &--1 {
               font-size: $font-huge;
@@ -18,6 +19,7 @@
               font-size: $font-medium;
           }
         }
+
     }
 }
 
@@ -38,13 +40,15 @@
         }
     }
 
+
     .hero {
         position: absolute;
-        top: 65%;
+        top: 60%;
 
         &__text--1 {
             font-size: $font-big;
-        }
+
         
     }
+}
 }
