@@ -1,0 +1,33 @@
+.about {
+    
+    &__card{
+        background-color: $color-contrast;
+        height: 50rem;
+        width: 80%;
+
+    }
+
+    &__img-left {
+        width: 50%;
+        height: 50%;
+        background-image: 
+        linear-gradient(to right bottom,
+        rgba($color-third, .3),
+        rgba($color-contrast, .5)),
+        url(../img/photo-about-1.jpg);
+        background-position: center;
+        @extend %border-radius;
+        box-shadow: 1rem 2rem 2rem rgba($color-fourth, .2);
+        transform: translateY(10%);
+
+    }
+
+    &__text-right {
+        padding: 0 8rem;
+        background-image: linear-gradient(to right, $color-fourth, $color-secondary, $color-primary);
+       -webkit-background-clip: text;
+       color: transparent;
+    }
+
+}
+

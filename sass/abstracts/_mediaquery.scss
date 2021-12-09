@@ -43,7 +43,7 @@
 
     .hero {
         position: absolute;
-        top: 60%;
+        top: 65%;
 
         &__text--1 {
             font-size: $font-big;
@@ -51,4 +51,38 @@
         
     }
 }
+}
+@media (max-width: 991px) {
+    .about {
+        &__card{
+            clip-path: polygon( 0 0, 100% 20%, 100% 100%, 0 100%);
+            -webkit-clip-path: polygon( 0 0, 100% 20%, 100% 100%, 0 100%);
+            margin:0 auto;
+        }
+
+    }
+    
+}
+
+@media (min-width:992px) {
+    .hero {
+        position:absolute;
+            
+        &::after {
+            content: "";
+            background-color: $color-contrast;
+            width: 1%;
+            height: 100%;
+            position: absolute;
+            top:0;
+            left:-3px;
+            z-index:-1;
+        }
+    }
+    .about {
+        &__card{
+            clip-path: polygon( 0 0, 100% 10%, 100% 100%, 0 100%);
+            -webkit-clip-path: polygon( 0 0, 100% 10%, 100% 100%, 0 100%);
+        }
+    }
 }
