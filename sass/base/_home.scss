@@ -1,6 +1,6 @@
 .home {
     height: 100vh;
-    background-image: linear-gradient(to right bottom, $color-fourth, $color-secondary, $color-primary);
+   @extend %background-gradient;
     clip-path: polygon( 0 0, 100% 0, 100% 100%, 0 80%);
     -webkit-clip-path: polygon( 0 0, 100% 0, 100% 100%, 0 80%);
 }

@@ -3,8 +3,6 @@
     &__card{
         background-color: $color-contrast;
         height: 50rem;
-        width: 80%;
-
     }
 
     &__img-left {
@@ -19,6 +17,7 @@
         @extend %border-radius;
         box-shadow: 1rem 2rem 2rem rgba($color-fourth, .2);
         transform: translateY(10%);
+        background-repeat: no-repeat;
 
     }
 
@@ -27,6 +26,7 @@
         background-image: linear-gradient(to right, $color-fourth, $color-secondary, $color-primary);
        -webkit-background-clip: text;
        color: transparent;
+
     }
 
 }

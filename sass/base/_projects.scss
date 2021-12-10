@@ -1,0 +1,55 @@
+.project {
+    background-image: linear-gradient(to right bottom, $color-contrast, $color-contrast-orange);
+
+    &__aspect-ratio {
+        transition: all .3s;
+        @extend %aspect-ratio;
+        &--1{
+       background-image: 
+       linear-gradient(to right bottom,
+        rgba($font-white, .2), 
+        rgba($color-contrast-orange, .2)),
+       url(../img/appclone-1.PNG);
+       }
+
+       &--2{
+        background-image: 
+        linear-gradient(to right bottom,
+         rgba($font-white, .2), 
+         rgba($color-contrast-orange, .2)),
+        url(../img/newsweek.PNG);
+        }
+
+        &--3{
+            background-image: 
+            linear-gradient(to right bottom,
+             rgba($font-white, .2), 
+             rgba($color-contrast-orange, .2)),
+            url(../img/airbnb.PNG);
+            }
+    }
+
+    &__text {
+        padding-top: 10rem;
+        padding-bottom: 5rem;
+    }
+
+    &__title {
+        font-size: $font-medium;
+        opacity: 0;
+    }
+
+   &__link {
+    text-decoration: none;
+   }
+   
+
+   &__link:hover &__title {
+       opacity: 1;
+   }
+
+   &__link:hover &__aspect-ratio {
+    filter: blur(1px) brightness(90%);
+   }
+
+}

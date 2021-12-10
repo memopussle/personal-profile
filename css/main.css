@@ -5,18 +5,18 @@ html {
 .u-top-default {
   margin-top: 10rem; }
 
+.u-top-big {
+  margin-top: 20rem; }
+
 .about__img-left, .main-page__img, .main-page__img::after {
   border-radius: 0 7rem 0 7rem; }
 
-@media (min-width: 576px) {
-  .main-page__column, .main-page__img {
-    height: 40rem; }
-  .hero {
-    position: relative; }
-    .hero__text--1 {
-      font-size: 6rem; }
-    .hero__text--2 {
-      font-size: 2rem; } }
+.home {
+  background-image: linear-gradient(to right bottom, #023e8a, #14213d, #000000); }
+
+.project__aspect-ratio {
+  background-repeat: no-repeat;
+  padding-top: calc(1 / 1.5 * 100%); }
 
 @media (max-width: 575px) {
   .main-page .row {
@@ -30,13 +30,24 @@ html {
     position: absolute;
     top: 65%; }
     .hero__text--1 {
-      font-size: 4rem; } }
+      font-size: 4rem; }
+    .hero__text--2 {
+      font-size: 1.5rem; } }
 
-@media (max-width: 991px) {
+@media (min-width: 576px) {
+  .main-page__column, .main-page__img {
+    height: 40rem; }
+  .hero {
+    position: relative; }
+    .hero__text--1 {
+      font-size: 6rem; }
+    .hero__text--2 {
+      font-size: 2rem; } }
+
+@media (max-width: 992px) {
   .about__card {
-    clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
-    -webkit-clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
-    margin: 0 auto; } }
+    clip-path: polygon(0 0, 100% 30%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 30%, 100% 100%, 0 100%); } }
 
 @media (min-width: 992px) {
   .hero {
@@ -45,14 +56,14 @@ html {
       content: "";
       background-color: #fb8500;
       width: 1%;
-      height: 100%;
+      height: 90%;
       position: absolute;
-      top: 0;
+      top: 2rem;
       left: -3px;
       z-index: -1; }
   .about__card {
-    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
-    -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%); } }
+    clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%); } }
 
 *,
 *::after,
@@ -65,7 +76,7 @@ h2 {
   font-size: 4rem; }
 
 h6 {
-  font-size: 2rem; }
+  font-size: 1.5rem; }
 
 .nav__nav-link {
   font-size: 1.5rem;
@@ -79,8 +90,7 @@ h6 {
 
 .about__card {
   background-color: #fb8500;
-  height: 50rem;
-  width: 80%; }
+  height: 50rem; }
 
 .about__img-left {
   width: 50%;
@@ -88,7 +98,8 @@ h6 {
   background-image: linear-gradient(to right bottom, rgba(245, 244, 244, 0.3), rgba(251, 133, 0, 0.5)), url(../img/photo-about-1.jpg);
   background-position: center;
   box-shadow: 1rem 2rem 2rem rgba(2, 62, 138, 0.2);
-  transform: translateY(10%); }
+  transform: translateY(10%);
+  background-repeat: no-repeat; }
 
 .about__text-right {
   padding: 0 8rem;
@@ -96,9 +107,31 @@ h6 {
   -webkit-background-clip: text;
   color: transparent; }
 
+.project {
+  background-image: linear-gradient(to right bottom, #fb8500, #fb4700); }
+  .project__aspect-ratio {
+    transition: all .3s; }
+    .project__aspect-ratio--1 {
+      background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(251, 71, 0, 0.2)), url(../img/appclone-1.PNG); }
+    .project__aspect-ratio--2 {
+      background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(251, 71, 0, 0.2)), url(../img/newsweek.PNG); }
+    .project__aspect-ratio--3 {
+      background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(251, 71, 0, 0.2)), url(../img/airbnb.PNG); }
+  .project__text {
+    padding-top: 10rem;
+    padding-bottom: 5rem; }
+  .project__title {
+    font-size: 2rem;
+    opacity: 0; }
+  .project__link {
+    text-decoration: none; }
+  .project__link:hover .project__title {
+    opacity: 1; }
+  .project__link:hover .project__aspect-ratio {
+    filter: blur(1px) brightness(90%); }
+
 .home {
   height: 100vh;
-  background-image: linear-gradient(to right bottom, #023e8a, #14213d, #000000);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%); }
 
@@ -128,5 +161,15 @@ h6 {
 .u-top-default {
   margin-top: 10rem; }
 
+.u-top-big {
+  margin-top: 20rem; }
+
 .about__img-left, .main-page__img, .main-page__img::after {
   border-radius: 0 7rem 0 7rem; }
+
+.home {
+  background-image: linear-gradient(to right bottom, #023e8a, #14213d, #000000); }
+
+.project__aspect-ratio {
+  background-repeat: no-repeat;
+  padding-top: calc(1 / 1.5 * 100%); }
