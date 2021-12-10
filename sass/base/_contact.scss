@@ -1,0 +1,19 @@
+.contact {
+    @extend %background-gradient;
+
+    &__email {
+        font-size: $default-font-size;
+    }
+
+    &__btn {
+        font-size: $default-font-size;
+        background-color: $color-contrast;
+        padding: 1rem 2rem;
+    }
+
+    &__text-area {
+        width: 100%;
+        height: 10rem;
+     }
+
+}

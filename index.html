@@ -13,6 +13,10 @@
   
   <!--Font awesome-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+  <!--Google Map-->
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+  <script src="./index.js"></script>
   <title>Personal Profile</title>
 </head>
 <body>
@@ -27,13 +31,13 @@
               <a class="nav-link nav__nav-link rounded-pill " aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item pe-5 me-5 mt-4">
-              <a class="nav-link nav__nav-link rounded-pill" href="#">About</a>
+              <a class="nav-link nav__nav-link rounded-pill" href="#about">About</a>
             </li>
             <li class="nav-item pe-5 me-5 mt-4">
-              <a class="nav-link nav__nav-link rounded-pill" href="#">Projects</a>
+              <a class="nav-link nav__nav-link rounded-pill" href="#projects">Projects</a>
             </li>
             <li class="nav-item mt-4">
-              <a class="nav-link nav__nav-link rounded-pill">Contact</a>
+              <a class="nav-link nav__nav-link rounded-pill" href="#contact">Contact</a>
             </li>
         
           </ul>
@@ -43,9 +47,9 @@
             <li class="nav-item dropdown ms-auto pe-5">
               <a class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><i class="fas fa-bars fa-3x"></i></a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item dropdown-menu__dropdown-item" href="#">About</a></li>
-                <li><a class="dropdown-item dropdown-menu__dropdown-item" href="#">Projects</a></li>
-                <li><a class="dropdown-item dropdown-menu__dropdown-item" href="#">Contact</a></li>
+                <li><a class="dropdown-item dropdown-menu__dropdown-item" href="#about">About</a></li>
+                <li><a class="dropdown-item dropdown-menu__dropdown-item" href="#projects">Projects</a></li>
+                <li><a class="dropdown-item dropdown-menu__dropdown-item" href="#contact">Contact</a></li>
               </ul>
             </li>
           </nav>
@@ -55,15 +59,15 @@
             <div class="row">
               <div class="col-12 col-sm-6 d-flex flex-column justify-content-center align-items-center pe-5 main-page__column">
                 <div class="hero ms-5 ps-5 ">
-                  <h1 class="hero__text hero__text--1">Hi I'm Thu</h1><br>
-                  <h4 class="hero__text hero__text--2 fw-normal">Welcome to my portfolio.</h4><br>
+                  <h1 class="hero__text hero__text--1 ps-5">Hi I'm Thu</h1><br>
+                  <h4 class="hero__text hero__text--2 fw-light ps-5">Currently a student of Altcademy and improving myself everday.</h4><br>
                   <div class="hero__background"></div>
-                  <div class="hero__social-media">
-                    <a href="#"><i class="fab fa-facebook-f fa-2x me-4"></i></a>
-                    <a href="#"><i class="fab fa-instagram fa-2x me-4"></i></a>
-                    <a href="#"><i class="far fa-envelope fa-2x me-4"></i></a>
-                    <a href="#"><i class="fab fa-linkedin fa-2x me-4"></i></a>
-                    <a href="#"><i class="fab fa-github fa-2x me-4"></i></a>
+                  <div class="hero__social-media ps-5">
+                    <a href="https://www.facebook.com/profile.php?id=100057492616304" target="_blank"><i class="fab fa-facebook-f fa-2x me-4"></i></a>
+                    <a href="https://www.instagram.com/tui.0106/" target="_blank"><i class="fab fa-instagram fa-2x me-4"></i></a>
+                    <a href="#" target="_blank"><i class="far fa-envelope fa-2x me-4"></i></a>
+                    <a href="https://www.linkedin.com/in/thu-giang-20b2111ba/" target="_blank"><i class="fab fa-linkedin fa-2x me-4"></i></a>
+                    <a href="https://github.com/memopussle" target="_blank"><i class="fab fa-github fa-2x me-4"></i></a>
                   </div>
                 </div>
                 
@@ -80,10 +84,10 @@
     </div>
       <!--==========About section===========-->
       <div class="container-fluid">
-        <div class="row about u-top-default">
+        <div class="row about"  id="about">
           <div class="col-12 col-lg-6">
-            <div class="about__card d-flex flex-column justify-content-center align-items-center">
-              <h2 class="about__text-left fw-normal text-white">About</h2>
+            <div class="about__card d-flex flex-column justify-content-center align-items-center ">
+              <h2 class="about__text-left fw-normal text-white u-top-big ">About</h2>
               <div class="about__img-left">
                
               </div>
@@ -92,35 +96,36 @@
           <div class="col-12 col-lg-6 mt-5">
                <div class="about__text-right mt-5 pt-5 d-flex align-items-center">
                   <i class="fab fa-pagelines fa-6x  pe-3"></i>
-                  <h6 class="fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.consectetur adipisicing elit</h6>
+                  <h6 class="fw-light">I love plants, hot summer beach or just a short walk out to nature - Either one would bring me a smile!</h6>
                </div>
 
                <div class="about__text-right mt-5 pt-3 d-flex align-items-center">
-                <i class="fas fa-dog fa-4x pe-3"></i>
-                 <h6 class="fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.consectetur adipisicing elit</h6>
+                <i class="fas fa-pencil-ruler fa-4x pe-3"></i>
+                 <h6 class="fw-light">I have always been a dreamy person and liked to draw since I was little. As natural, I'm scared of math or endless lines of codes; but I'm now ready to step out of my comfort zone and prove to myself that I can do it.</h6>
                 </div>
 
                 <div class="about__text-right mt-5 pt-3 d-flex align-items-center">
                   <i class="fas fa-coffee fa-4x pe-3"></i>
-                   <h6 class="fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.consectetur adipisicing elit</h6>
+                   <h6 class="fw-light">I'm fueled by coffee! Nothing better than a hot aromatic Vietnamese coffee in the morning. Drinking 2-3 cups of coffee per day is my jam, however, it's not a healthy habit and I'm working on it.</h6>
                 </div>
 
                 <div class="about__text-right mt-5 pt-3 d-flex align-items-center">
                   <i class="fas fa-laptop fa-4x  pe-3"></i>
-                   <h6 class="fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.consectetur adipisicing elit</h6>
+                   <h6 class="fw-light">I've recently got to know code and completely fall in love with it! Studying code with little time on hand alongside with my full-time job is tight, but I like to swim in on my own thoughts and feel rewarded when solving problems.</h6>
                 </div>
 
-          </div>
+           </div>
         </div>
+      </div>
 
          <!--==========section: project===========-->
         <div class="container-fluid">
-          <section class="project u-top-big text-center">
+          <section class="project u-top-big text-center" id="projects">
             <h2 class="project__text text-white">My Projects</h2>
             <div class="row p-5 gx-5 gy-5">
               <div class="col-12 col-lg-4 project__column">
                 
-                <a class="project__link" href="">  <div class="project__aspect-ratio project__aspect-ratio--1"></div>
+                <a class="project__link" href="https://suspicious-fermi-663475.netlify.app/ target="_blank">  <div class="project__aspect-ratio project__aspect-ratio--1"></div>
                   <h4 class=" project__title pt-5 text-white">Apple Clone</h4>
                 </a>
 
@@ -128,14 +133,14 @@
               </div>
               <div class="col-12 col-lg-4 project__column">
                 
-                <a class="project__link" href="">  <div class="project__aspect-ratio project__aspect-ratio--2"></div>
+                <a class="project__link" href="https://priceless-johnson-9ddfb1.netlify.app/" target="_blank" >  <div class="project__aspect-ratio project__aspect-ratio--2"></div>
                   <h4 class=" project__title pt-5 text-white">Newsweek</h4>
                 </a>
                  
               </div>
               <div class="col-12 col-lg-4 project__column">
                 
-                <a class="project__link" href="">  <div class="project__aspect-ratio project__aspect-ratio--3"></div>
+                <a class="project__link" href="https://epic-hugle-5e39b2.netlify.app/" target="_blank">  <div class="project__aspect-ratio project__aspect-ratio--3"></div>
                   <h4 class=" project__title pt-5 text-white">Airbnb</h4>
                 </a>
                
@@ -144,6 +149,45 @@
           </section>
         </div>
 
+        <!--=============Section: contact========-->
+      <div class="container-fluid">
+        <section class="contact u-top-big" id="contact">
+          <div class="row">
+            <div class="col-12 col-md-6 p-5">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d817236.7356436292!2d174.14567553222705!3d-36.858495277477616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d47fb5a9ce6fb%3A0x500ef6143a29917!2sAuckland!5e0!3m2!1sen!2snz!4v1639122549041!5m2!1sen!2snz" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="col-12 col-md-6 d-flex flex-column contact__column--right p-5">
+              
+              <h4 class="text-white mb-5 fw-normal ">Inbox me</h4>
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label contact__email text-white fw-light">Email address</label>
+                  <div class="row">
+                    <div class="col-9 col-lg-7">
+                    <input type="email" class="form-control" aria-describedby="emailHelp">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-9 col-lg-7 mt-5">    
+                          <textarea class="contact__text-area" name="subject" placeholder="send me message..."></textarea>
+                    </div>
+                  </div>
+                </div>
+                <button type="submit" class="btn contact__btn text-white rounded-pill mt-4 mb-5">Submit</button>
+              </form>
+
+              <div class="hero__social-media mt-auto">
+                <h4 class="text-white fw-normal mb-4">Contact</h4>
+                <a href="https://www.facebook.com/profile.php?id=100057492616304" target="_blank"><i class="fab fa-facebook-f fa-2x me-4"></i></a>
+                    <a href="https://www.instagram.com/tui.0106/" target="_blank"><i class="fab fa-instagram fa-2x me-4"></i></a>
+                    <a href="#" target="_blank"><i class="far fa-envelope fa-2x me-4"></i></a>
+                    <a href="https://www.linkedin.com/in/thu-giang-20b2111ba/" target="_blank"><i class="fab fa-linkedin fa-2x me-4"></i></a>
+                    <a href="https://github.com/memopussle" target="_blank"><i class="fab fa-github fa-2x me-4"></i></a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>

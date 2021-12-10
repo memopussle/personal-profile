@@ -61,6 +61,14 @@
     }
 }
 
+@media (max-width: 720px) {
+  .contact {
+      &__column--right {
+          padding-top: 15rem;
+      }
+  }
+}
+
 @media (max-width: 992px) {
     .about {
         &__card{
@@ -82,10 +90,10 @@
             content: "";
             background-color: $color-contrast;
             width: 1%;
-            height: 90%;
+            height: 92%;
             position: absolute;
             top:2rem;
-            left:-3px;
+            left:3rem;
             z-index:-1;
         }
     }
