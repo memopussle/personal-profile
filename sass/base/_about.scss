@@ -1,8 +1,9 @@
 .about {
-    
+    margin-top: -20rem;
     &__card{
         background-color: $color-contrast;
-        height: 50rem;
+        height: 80rem;
+        border: 0 7rem 0 0;
     }
 
     &__img-left {
@@ -30,4 +31,3 @@
     }
 
 }
-
