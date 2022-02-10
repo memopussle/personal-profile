@@ -1,0 +1,15 @@
+.skills {
+    &__title, &__icon {
+         background-image: linear-gradient(
+      to right,
+      $color-contrast,
+      $color-contrast-orange
+    );
+     -webkit-background-clip: text;
+    color: transparent;
+    }
+
+    &__title {
+      font-size: var(--font-huge-default);
+    }
+}

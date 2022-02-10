@@ -16,3 +16,12 @@
     padding-top: $long-aspect-ratio-box;
 
 }
+
+%linear-color {
+     background-image: linear-gradient(
+      to right,
+      $color-fourth,
+      $color-secondary,
+      $color-primary
+    );
+}

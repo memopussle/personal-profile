@@ -24,13 +24,12 @@
 
   &__text-right {
     padding: 0 8rem;
-    background-image: linear-gradient(
-      to right,
-      $color-fourth,
-      $color-secondary,
-      $color-primary
-    );
+    @extend %linear-color;
     -webkit-background-clip: text;
     color: transparent;
+  }
+
+  &__text-left {
+    font-size: var(--font-huge-default);
   }
 }

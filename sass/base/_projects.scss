@@ -1,9 +1,5 @@
 .project {
-  background-image: linear-gradient(
-    to right bottom,
-    $color-contrast,
-    $color-contrast-orange
-  );
+
 
   &__aspect-ratio {
     transition: all 0.3s;
@@ -63,25 +59,25 @@
     }
   }
 
-  &__text {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
+ 
+  &__text,
+  &__description {
+    @extend %linear-color;
+    -webkit-background-clip: text;
+    color: transparent;
 
-  &__title {
-    font-size: $font-medium;
-    opacity: 0;
   }
 
   &__link {
     text-decoration: none;
   }
 
-  &__link:hover &__title {
-    opacity: 1;
-  }
-
   &__link:hover &__aspect-ratio {
     filter: blur(1px) brightness(90%);
+  }
+
+  &__title,
+  &__text {
+    font-size: $font-big;
   }
 }

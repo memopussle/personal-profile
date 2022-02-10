@@ -1,6 +1,11 @@
+:root {
+  --font-huge-default: 7rem; }
+
 html {
-  font-family: 'Roboto', sans-serif;
   font-size: 62.5%; }
+
+body {
+  font-family: "Barlow", sans-serif; }
 
 .u-top-big {
   margin-top: 15rem; }
@@ -14,6 +19,9 @@ html {
 .project__aspect-ratio {
   background-repeat: no-repeat;
   padding-top: calc(1 / 1.5 * 100%); }
+
+.about__text-right, .project__text, .project__description {
+  background-image: linear-gradient(to right, #023e8a, #14213d, #000000); }
 
 @media (max-width: 575px) {
   .main-page .row {
@@ -109,38 +117,38 @@ h4 {
     background-repeat: no-repeat; }
   .about__text-right {
     padding: 0 8rem;
-    background-image: linear-gradient(to right, #023e8a, #14213d, #000000);
     -webkit-background-clip: text;
     color: transparent; }
+  .about__text-left {
+    font-size: var(--font-huge-default); }
 
-.project {
-  background-image: linear-gradient(to right bottom, #fb8500, #fb4700); }
-  .project__aspect-ratio {
-    transition: all 0.3s; }
-    .project__aspect-ratio--1 {
-      background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(251, 71, 0, 0.2)), url(../img/appclone-1.PNG); }
-    .project__aspect-ratio--2 {
-      background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(251, 71, 0, 0.2)), url(../img/newsweek.PNG); }
-    .project__aspect-ratio--3 {
-      background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(251, 71, 0, 0.2)), url(../img/airbnb.PNG); }
-    .project__aspect-ratio--4 {
-      background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(251, 71, 0, 0.2)), url(../img/art_1.PNG); }
-    .project__aspect-ratio--5 {
-      background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(251, 71, 0, 0.2)), url(../img/art_2.jpg); }
-    .project__aspect-ratio--6 {
-      background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(251, 71, 0, 0.2)), url(../img/photo_4.jpg); }
-  .project__text {
-    padding-top: 5rem;
-    padding-bottom: 5rem; }
-  .project__title {
-    font-size: 2rem;
-    opacity: 0; }
-  .project__link {
-    text-decoration: none; }
-  .project__link:hover .project__title {
-    opacity: 1; }
-  .project__link:hover .project__aspect-ratio {
-    filter: blur(1px) brightness(90%); }
+.project__aspect-ratio {
+  transition: all 0.3s; }
+  .project__aspect-ratio--1 {
+    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(251, 71, 0, 0.2)), url(../img/appclone-1.PNG); }
+  .project__aspect-ratio--2 {
+    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(251, 71, 0, 0.2)), url(../img/newsweek.PNG); }
+  .project__aspect-ratio--3 {
+    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(251, 71, 0, 0.2)), url(../img/airbnb.PNG); }
+  .project__aspect-ratio--4 {
+    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(251, 71, 0, 0.2)), url(../img/art_1.PNG); }
+  .project__aspect-ratio--5 {
+    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(251, 71, 0, 0.2)), url(../img/art_2.jpg); }
+  .project__aspect-ratio--6 {
+    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(251, 71, 0, 0.2)), url(../img/photo_4.jpg); }
+
+.project__text, .project__description {
+  -webkit-background-clip: text;
+  color: transparent; }
+
+.project__link {
+  text-decoration: none; }
+
+.project__link:hover .project__aspect-ratio {
+  filter: blur(1px) brightness(90%); }
+
+.project__title, .project__text {
+  font-size: 4rem; }
 
 .contact__email {
   font-size: 1.5rem; }
@@ -195,3 +203,14 @@ h4 {
 .project__aspect-ratio {
   background-repeat: no-repeat;
   padding-top: calc(1 / 1.5 * 100%); }
+
+.about__text-right, .project__text, .project__description {
+  background-image: linear-gradient(to right, #023e8a, #14213d, #000000); }
+
+.skills__title, .skills__icon {
+  background-image: linear-gradient(to right, #fb8500, #fb4700);
+  -webkit-background-clip: text;
+  color: transparent; }
+
+.skills__title {
+  font-size: var(--font-huge-default); }
