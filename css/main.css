@@ -20,7 +20,7 @@ body {
   background-repeat: no-repeat;
   padding-top: calc(1 / 1.5 * 100%); }
 
-.about__text-right, .project__text, .project__description {
+.about__text-right, .art__description, .art__text {
   background-image: linear-gradient(to right, #023e8a, #14213d, #000000); }
 
 @media (max-width: 575px) {
@@ -122,33 +122,33 @@ h4 {
   .about__text-left {
     font-size: var(--font-huge-default); }
 
-.project__aspect-ratio {
-  transition: all 0.3s; }
-  .project__aspect-ratio--1 {
-    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(251, 71, 0, 0.2)), url(../img/appclone-1.PNG); }
-  .project__aspect-ratio--2 {
-    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(251, 71, 0, 0.2)), url(../img/newsweek.PNG); }
-  .project__aspect-ratio--3 {
-    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(251, 71, 0, 0.2)), url(../img/airbnb.PNG); }
-  .project__aspect-ratio--4 {
-    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(251, 71, 0, 0.2)), url(../img/art_1.PNG); }
-  .project__aspect-ratio--5 {
-    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(251, 71, 0, 0.2)), url(../img/art_2.jpg); }
-  .project__aspect-ratio--6 {
-    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(251, 71, 0, 0.2)), url(../img/photo_4.jpg); }
-
-.project__text, .project__description {
-  -webkit-background-clip: text;
-  color: transparent; }
-
-.project__link {
-  text-decoration: none; }
-
-.project__link:hover .project__aspect-ratio {
-  filter: blur(1px) brightness(90%); }
-
-.project__title, .project__text {
-  font-size: 4rem; }
+.project {
+  background-image: linear-gradient(to right, #fb8500, #fb4700); }
+  .project__aspect-ratio {
+    transition: all 0.3s; }
+    .project__aspect-ratio--1 {
+      background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(251, 71, 0, 0.2)), url(../img/appclone-1.PNG); }
+    .project__aspect-ratio--2 {
+      background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(251, 71, 0, 0.2)), url(../img/newsweek.PNG); }
+    .project__aspect-ratio--3 {
+      background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(251, 71, 0, 0.2)), url(../img/airbnb.PNG); }
+    .project__aspect-ratio--4 {
+      background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(251, 71, 0, 0.2)), url(../img/art_1.PNG); }
+    .project__aspect-ratio--5 {
+      background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(251, 71, 0, 0.2)), url(../img/art_2.jpg); }
+    .project__aspect-ratio--6 {
+      background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(251, 71, 0, 0.2)), url(../img/photo_4.jpg); }
+  .project__text {
+    font-size: var(--font-huge-default);
+    padding-top: 8rem; }
+  .project__link {
+    text-decoration: none; }
+  .project__link:hover .project__aspect-ratio {
+    filter: blur(1px) brightness(90%); }
+  .project__title {
+    font-size: 4rem; }
+  .project__details {
+    font-size: 2rem; }
 
 .contact__email {
   font-size: 1.5rem; }
@@ -204,7 +204,7 @@ h4 {
   background-repeat: no-repeat;
   padding-top: calc(1 / 1.5 * 100%); }
 
-.about__text-right, .project__text, .project__description {
+.about__text-right, .art__description, .art__text {
   background-image: linear-gradient(to right, #023e8a, #14213d, #000000); }
 
 .skills__title, .skills__icon {
@@ -214,3 +214,12 @@ h4 {
 
 .skills__title {
   font-size: var(--font-huge-default); }
+
+.art__text {
+  font-size: var(--font-huge-default);
+  padding-top: 8rem; }
+
+.art__description, .art__text {
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 8rem; }

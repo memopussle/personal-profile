@@ -1,5 +1,9 @@
 .project {
-
+  background-image: linear-gradient(
+    to right,
+    $color-contrast,
+    $color-contrast-orange
+  );
 
   &__aspect-ratio {
     transition: all 0.3s;
@@ -59,13 +63,9 @@
     }
   }
 
- 
-  &__text,
-  &__description {
-    @extend %linear-color;
-    -webkit-background-clip: text;
-    color: transparent;
-
+  &__text {
+    font-size: var(--font-huge-default);
+    padding-top: 8rem;
   }
 
   &__link {
@@ -76,8 +76,10 @@
     filter: blur(1px) brightness(90%);
   }
 
-  &__title,
-  &__text {
+  &__title {
     font-size: $font-big;
+  }
+  &__details {
+    font-size: $font-medium;
   }
 }

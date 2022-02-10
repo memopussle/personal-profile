@@ -1,6 +1,13 @@
+:root {
+  --font-huge-default: 7rem;
+}
+
 html {
-  font-family: 'Roboto', sans-serif;
   font-size: 62.5%;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
 }
 
 .u-top-big {
@@ -19,6 +26,11 @@ html {
 .project__aspect-ratio {
   background-repeat: no-repeat;
   padding-top: calc(1 / 1.5 * 100%);
+}
+
+.about__text-right, .art__description, .art__text {
+  background-image: -webkit-gradient(linear, left top, right top, from(#023e8a), color-stop(#14213d), to(#000000));
+  background-image: linear-gradient(to right, #023e8a, #14213d, #000000);
 }
 
 @media (max-width: 575px) {
@@ -147,9 +159,9 @@ h4 {
 .about__img-left {
   width: 50%;
   height: 50%;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(245, 244, 244, 0.3)), to(rgba(251, 133, 0, 0.5))), url(../img/photo-about-1.jpg);
-  background-image: linear-gradient(to right bottom, rgba(245, 244, 244, 0.3), rgba(251, 133, 0, 0.5)), url(../img/photo-about-1.jpg);
-  background-position: center;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(245, 244, 244, 0.2)), to(rgba(251, 133, 0, 0.2))), url(../img/photo_2.jpg);
+  background-image: linear-gradient(to right bottom, rgba(245, 244, 244, 0.2), rgba(251, 133, 0, 0.2)), url(../img/photo_2.jpg);
+  background-position: left;
   -webkit-box-shadow: 1rem 2rem 2rem rgba(2, 62, 138, 0.2);
           box-shadow: 1rem 2rem 2rem rgba(2, 62, 138, 0.2);
   -webkit-transform: translateY(10%);
@@ -159,20 +171,22 @@ h4 {
 
 .about__text-right {
   padding: 0 8rem;
-  background-image: -webkit-gradient(linear, left top, right top, from(#023e8a), color-stop(#14213d), to(#000000));
-  background-image: linear-gradient(to right, #023e8a, #14213d, #000000);
   -webkit-background-clip: text;
   color: transparent;
 }
 
+.about__text-left {
+  font-size: var(--font-huge-default);
+}
+
 .project {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#fb8500), to(#fb4700));
-  background-image: linear-gradient(to right bottom, #fb8500, #fb4700);
+  background-image: -webkit-gradient(linear, left top, right top, from(#fb8500), to(#fb4700));
+  background-image: linear-gradient(to right, #fb8500, #fb4700);
 }
 
 .project__aspect-ratio {
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .project__aspect-ratio--1 {
@@ -190,27 +204,41 @@ h4 {
   background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(251, 71, 0, 0.2)), url(../img/airbnb.PNG);
 }
 
-.project__text {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+.project__aspect-ratio--4 {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(251, 71, 0, 0.2))), url(../img/art_1.PNG);
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(251, 71, 0, 0.2)), url(../img/art_1.PNG);
 }
 
-.project__title {
-  font-size: 2rem;
-  opacity: 0;
+.project__aspect-ratio--5 {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(251, 71, 0, 0.2))), url(../img/art_2.jpg);
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(251, 71, 0, 0.2)), url(../img/art_2.jpg);
+}
+
+.project__aspect-ratio--6 {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(251, 71, 0, 0.2))), url(../img/photo_4.jpg);
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(251, 71, 0, 0.2)), url(../img/photo_4.jpg);
+}
+
+.project__text {
+  font-size: var(--font-huge-default);
+  padding-top: 8rem;
 }
 
 .project__link {
   text-decoration: none;
 }
 
-.project__link:hover .project__title {
-  opacity: 1;
-}
-
 .project__link:hover .project__aspect-ratio {
   -webkit-filter: blur(1px) brightness(90%);
           filter: blur(1px) brightness(90%);
+}
+
+.project__title {
+  font-size: 4rem;
+}
+
+.project__details {
+  font-size: 2rem;
 }
 
 .contact__email {
@@ -238,8 +266,8 @@ h4 {
 .main-page__img {
   position: relative;
   background-position: center;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 180, 216, 0.4)), to(rgba(2, 62, 138, 0.3))), url(../img/photome.jpg);
-  background-image: linear-gradient(to right bottom, rgba(0, 180, 216, 0.4), rgba(2, 62, 138, 0.3)), url(../img/photome.jpg);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 180, 216, 0.4)), to(rgba(2, 62, 138, 0.3))), url(../img/photo_1.jpg);
+  background-image: linear-gradient(to right bottom, rgba(0, 180, 216, 0.4), rgba(2, 62, 138, 0.3)), url(../img/photo_1.jpg);
   background-size: cover;
 }
 
@@ -282,5 +310,32 @@ h4 {
 .project__aspect-ratio {
   background-repeat: no-repeat;
   padding-top: calc(1 / 1.5 * 100%);
+}
+
+.about__text-right, .art__description, .art__text {
+  background-image: -webkit-gradient(linear, left top, right top, from(#023e8a), color-stop(#14213d), to(#000000));
+  background-image: linear-gradient(to right, #023e8a, #14213d, #000000);
+}
+
+.skills__title, .skills__icon {
+  background-image: -webkit-gradient(linear, left top, right top, from(#fb8500), to(#fb4700));
+  background-image: linear-gradient(to right, #fb8500, #fb4700);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.skills__title {
+  font-size: var(--font-huge-default);
+}
+
+.art__text {
+  font-size: var(--font-huge-default);
+  padding-top: 8rem;
+}
+
+.art__description, .art__text {
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 8rem;
 }
 /*# sourceMappingURL=main.css.map */

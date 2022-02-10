@@ -1,0 +1,14 @@
+.art {
+  &__text {
+    font-size: var(--font-huge-default);
+    padding-top: 8rem;
+  }
+
+  &__description,
+  &__text {
+    @extend %linear-color;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 8rem;
+  }
+}
