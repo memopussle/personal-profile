@@ -1,33 +1,36 @@
 .about {
-    margin-top: -20rem;
-    &__card{
-        background-color: $color-contrast;
-        height: 80rem;
-        border: 0 7rem 0 0;
-    }
+  margin-top: -20rem;
+  &__card {
+    background-color: $color-contrast;
+    height: 80rem;
+    border: 0 7rem 0 0;
+  }
 
-    &__img-left {
-        width: 50%;
-        height: 50%;
-        background-image: 
-        linear-gradient(to right bottom,
-        rgba($color-third, .3),
-        rgba($color-contrast, .5)),
-        url(../img/photo-about-1.jpg);
-        background-position: center;
-        @extend %border-radius;
-        box-shadow: 1rem 2rem 2rem rgba($color-fourth, .2);
-        transform: translateY(10%);
-        background-repeat: no-repeat;
+  &__img-left {
+    width: 50%;
+    height: 50%;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-third, 0.3),
+        rgba($color-contrast, 0.5)
+      ),
+      url(../img/photo-about-1.jpg);
+    background-position: center;
+    @extend %border-radius;
+    box-shadow: 1rem 2rem 2rem rgba($color-fourth, 0.2);
+    transform: translateY(10%);
+    background-repeat: no-repeat;
+  }
 
-    }
-
-    &__text-right {
-        padding: 0 8rem;
-        background-image: linear-gradient(to right, $color-fourth, $color-secondary, $color-primary);
-       -webkit-background-clip: text;
-       color: transparent;
-
-    }
-
+  &__text-right {
+    padding: 0 8rem;
+    background-image: linear-gradient(
+      to right,
+      $color-fourth,
+      $color-secondary,
+      $color-primary
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+  }
 }

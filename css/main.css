@@ -151,7 +151,8 @@ h4 {
 .home {
   height: 100vh;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%); }
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+  position: relative; }
 
 .main-page__img {
   position: relative;

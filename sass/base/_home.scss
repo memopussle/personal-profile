@@ -1,50 +1,51 @@
 .home {
-   height: 100vh;
-   @extend %background-gradient;
-    clip-path: polygon( 0 0, 100% 0, 100% 100%, 0 80%);
-    -webkit-clip-path: polygon( 0 0, 100% 0, 100% 100%, 0 80%);
+  height: 100vh;
+  @extend %background-gradient;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+  position: relative;
+
+
 }
- .main-page {
-    &__img {
-        position: relative;
-         background-position: center;
-         @extend %border-radius;
-         background-image: linear-gradient(to right bottom, 
-         rgba($color-fifth, .4), 
-         rgba($color-fourth, .3)), 
-         url(../img/photome.jpg);
-         background-size: cover;
-         
 
-         &::after {
-            content: "";
-            width: 100%;
-            height: 100%;;
-            position: absolute;
-            z-index: -1;
-            background-color: $color-contrast;
-            top: -5%;
-            left: -5%;
-            @extend %border-radius;
-        }
+.main-page {
+  &__img {
+    position: relative;
+    background-position: center;
+    @extend %border-radius;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-fifth, 0.4),
+        rgba($color-fourth, 0.3)
+      ),
+      url(../img/photome.jpg);
+    background-size: cover;
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: -1;
+      background-color: $color-contrast;
+      top: -5%;
+      left: -5%;
+      @extend %border-radius;
     }
-
+  }
 }
 .hero {
+  &__text {
+    color: $font-white;
+  }
 
-    &__text {
-        color: $font-white;
-        
-    }
+  &__social-media {
+    a {
+      color: $font-white;
 
-    &__social-media {
-       a {
-           color: $font-white;
-           
-           &:hover {
-               color: $color-contrast;
-           }
-       }
+      &:hover {
+        color: $color-contrast;
+      }
     }
-  
+  }
 }
