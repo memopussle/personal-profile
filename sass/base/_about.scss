@@ -11,11 +11,11 @@
     height: 50%;
     background-image: linear-gradient(
         to right bottom,
-        rgba($color-third, 0.3),
-        rgba($color-contrast, 0.5)
+        rgba($color-third, 0.2),
+        rgba($color-contrast, 0.2)
       ),
-      url(../img/photo-about-1.jpg);
-    background-position: center;
+      url(../img/photo_2.jpg);
+    background-position: left;
     @extend %border-radius;
     box-shadow: 1rem 2rem 2rem rgba($color-fourth, 0.2);
     transform: translateY(10%);

@@ -102,8 +102,8 @@ h4 {
   .about__img-left {
     width: 50%;
     height: 50%;
-    background-image: linear-gradient(to right bottom, rgba(245, 244, 244, 0.3), rgba(251, 133, 0, 0.5)), url(../img/photo-about-1.jpg);
-    background-position: center;
+    background-image: linear-gradient(to right bottom, rgba(245, 244, 244, 0.2), rgba(251, 133, 0, 0.2)), url(../img/photo_2.jpg);
+    background-position: left;
     box-shadow: 1rem 2rem 2rem rgba(2, 62, 138, 0.2);
     transform: translateY(10%);
     background-repeat: no-repeat; }
@@ -116,7 +116,7 @@ h4 {
 .project {
   background-image: linear-gradient(to right bottom, #fb8500, #fb4700); }
   .project__aspect-ratio {
-    transition: all .3s; }
+    transition: all 0.3s; }
     .project__aspect-ratio--1 {
       background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(251, 71, 0, 0.2)), url(../img/appclone-1.PNG); }
     .project__aspect-ratio--2 {
@@ -157,7 +157,7 @@ h4 {
 .main-page__img {
   position: relative;
   background-position: center;
-  background-image: linear-gradient(to right bottom, rgba(0, 180, 216, 0.4), rgba(2, 62, 138, 0.3)), url(../img/photome.jpg);
+  background-image: linear-gradient(to right bottom, rgba(0, 180, 216, 0.4), rgba(2, 62, 138, 0.3)), url(../img/photo_1.jpg);
   background-size: cover; }
   .main-page__img::after {
     content: "";
