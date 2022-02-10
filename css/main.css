@@ -123,6 +123,12 @@ h4 {
       background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(251, 71, 0, 0.2)), url(../img/newsweek.PNG); }
     .project__aspect-ratio--3 {
       background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(251, 71, 0, 0.2)), url(../img/airbnb.PNG); }
+    .project__aspect-ratio--4 {
+      background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(251, 71, 0, 0.2)), url(../img/art_1.PNG); }
+    .project__aspect-ratio--5 {
+      background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(251, 71, 0, 0.2)), url(../img/art_2.jpg); }
+    .project__aspect-ratio--6 {
+      background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(251, 71, 0, 0.2)), url(../img/photo_4.jpg); }
   .project__text {
     padding-top: 5rem;
     padding-bottom: 5rem; }

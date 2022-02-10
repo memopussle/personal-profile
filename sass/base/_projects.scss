@@ -35,6 +35,32 @@
         url(../img/airbnb.PNG);
     }
 
+    &--4 {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba($font-white, 0.2),
+          rgba($color-contrast-orange, 0.2)
+        ),
+        url(../img/art_1.PNG);
+    }
+
+    &--5 {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba($font-white, 0.2),
+          rgba($color-contrast-orange, 0.2)
+        ),
+        url(../img/art_2.jpg);
+    }
+
+    &--6 {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba($font-white, 0.2),
+          rgba($color-contrast-orange, 0.2)
+        ),
+        url(../img/photo_4.jpg);
+    }
   }
 
   &__text {
